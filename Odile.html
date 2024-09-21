@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenHarmonie - Sophrologie</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #86b3d1;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        .intro, .tarifs, .rdv, .contact {
+            background-color: #e7f3f9;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #86b3d1;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin-top: 10px;
+        }
+        form input, form select, form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form input[type="submit"] {
+            background-color: #86b3d1;
+            color: #fff;
+            border: none;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenue chez ZenHarmonie</h1>
+        <p>La sophrologie pour retrouver sérénité et bien-être</p>
+    </header>
+
+    <section class="intro">
+        <h2>À propos de la Sophrologie</h2>
+        <p>La sophrologie est une méthode douce et naturelle qui combine des techniques de relaxation, de respiration et de visualisation positive. Elle aide à harmoniser le corps et l’esprit, améliorant ainsi la gestion du stress, la qualité du sommeil et le bien-être général.</p>
+        <p>Accessible à tous, quel que soit l’âge ou la condition physique, elle peut être pratiquée en séances individuelles ou en groupe.</p>
+    </section>
+
+    <section class="tarifs">
+        <h2>Nos Services et Tarifs</h2>
+        <ul>
+            <li>Séance découverte (45 min) : 40€</li>
+            <li>Séance de suivi (1h) : 60€</li>
+            <li>Forfait 5 séances : 270€ (économie de 30€)</li>
+            <li>Séance en ligne : 50€</li>
+        </ul>
+    </section>
+
+    <section class="rdv">
+        <h2>Prendre un Rendez-vous</h2>
+        <form action="#" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="service">Sélectionnez un service :</label>
+            <select id="service" name="service">
+                <option value="decouverte">Séance découverte (45 min) - 40€</option>
+                <option value="suivi">Séance de suivi (1h) - 60€</option>
+                <option value="forfait">Forfait 5 séances - 270€</option>
+                <option value="enligne">Séance en ligne - 50€</option>
+            </select>
+
+            <label for="date">Choisissez une date :</label>
+            <input type="date" id="date" name="date" required>
+
+            <input type="submit" value="Valider le RDV">
+        </form>
+    </section>
+
+    <section class="contact">
+        <h2>Contactez-nous</h2>
+        <form action="#" method="POST">
+            <label for="message">Votre message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ZenHarmonie - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
